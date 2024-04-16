@@ -1,0 +1,594 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{843D6C7A-A6CA-470F-AFE4-1C3F473737CC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>advising</RootNamespace>
+    <AssemblyName>advising</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="active_students.aspx" />
+    <Content Include="add_course.aspx" />
+    <Content Include="add_makeup.aspx" />
+    <Content Include="add_semester.aspx" />
+    <Content Include="admin_login.aspx" />
+    <Content Include="admin_page.aspx" />
+    <Content Include="advisorMain.aspx" />
+    <Content Include="advisors_page.aspx" />
+    <Content Include="availablecourses.aspx" />
+    <Content Include="choose.aspx" />
+    <Content Include="choose_inst.aspx" />
+    <Content Include="confirm.aspx" />
+    <Content Include="confirm_page.aspx" />
+    <Content Include="courserequest.aspx" />
+    <Content Include="courseRequestAdvisor.aspx" />
+    <Content Include="Course_Slots_Instructor.aspx" />
+    <Content Include="credithourrequest.aspx" />
+    <Content Include="c_i_slots.aspx" />
+    <Content Include="deleteCourseAdvisor.aspx" />
+    <Content Include="delete_course.aspx" />
+    <Content Include="delete_slot.aspx" />
+    <Content Include="exam_details.aspx" />
+    <Content Include="insertCourseGPAdvisor.aspx" />
+    <Content Include="insertGPAdvisor.aspx" />
+    <Content Include="instructor_courses_page.aspx" />
+    <Content Include="issue_installments.aspx" />
+    <Content Include="link_ins_course_slot.aspx" />
+    <Content Include="link_stu_adv.aspx" />
+    <Content Include="link_stu_course_ins.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="loginAdvisor.aspx" />
+    <Content Include="main.aspx" />
+    <Content Include="makeup1.aspx" />
+    <Content Include="makeup2.aspx" />
+    <Content Include="missingcourses.aspx" />
+    <Content Include="optionalcourses.aspx" />
+    <Content Include="options.aspx" />
+    <Content Include="pendingRequestsAdvisor.aspx" />
+    <Content Include="phonenumbers.aspx" />
+    <Content Include="registerAdvisor.aspx" />
+    <Content Include="requestCHAdvisor.aspx" />
+    <Content Include="requests.aspx" />
+    <Content Include="requiredcourses.aspx" />
+    <Content Include="semesters_offered_courses.aspx" />
+    <Content Include="semester_courses_page.aspx" />
+    <Content Include="student2.aspx" />
+    <Content Include="studentregister.aspx" />
+    <Content Include="students_page.aspx" />
+    <Content Include="transcript.aspx" />
+    <Content Include="updateGPAdvisor.aspx" />
+    <Content Include="update_status.aspx" />
+    <Content Include="viewASAdvisor.aspx" />
+    <Content Include="viewRequestsAdvisor.aspx" />
+    <Content Include="viewStudentsAdvisor.aspx" />
+    <Content Include="view_all_prereq.aspx" />
+    <Content Include="view_gradplans.aspx" />
+    <Content Include="view_g_p.aspx" />
+    <Content Include="view_inst.aspx" />
+    <Content Include="view_payments.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="active_students.aspx.cs">
+      <DependentUpon>active_students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="active_students.aspx.designer.cs">
+      <DependentUpon>active_students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_course.aspx.cs">
+      <DependentUpon>add_course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_course.aspx.designer.cs">
+      <DependentUpon>add_course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_makeup.aspx.cs">
+      <DependentUpon>add_makeup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_makeup.aspx.designer.cs">
+      <DependentUpon>add_makeup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_semester.aspx.cs">
+      <DependentUpon>add_semester.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_semester.aspx.designer.cs">
+      <DependentUpon>add_semester.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_page.aspx.cs">
+      <DependentUpon>admin_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_page.aspx.designer.cs">
+      <DependentUpon>admin_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advisorMain.aspx.cs">
+      <DependentUpon>advisorMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advisorMain.aspx.designer.cs">
+      <DependentUpon>advisorMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advisors_page.aspx.cs">
+      <DependentUpon>advisors_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advisors_page.aspx.designer.cs">
+      <DependentUpon>advisors_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="availablecourses.aspx.cs">
+      <DependentUpon>availablecourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="availablecourses.aspx.designer.cs">
+      <DependentUpon>availablecourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="choose.aspx.cs">
+      <DependentUpon>choose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="choose.aspx.designer.cs">
+      <DependentUpon>choose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="choose_inst.aspx.cs">
+      <DependentUpon>choose_inst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="choose_inst.aspx.designer.cs">
+      <DependentUpon>choose_inst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirm.aspx.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirm.aspx.designer.cs">
+      <DependentUpon>confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirm_page.aspx.cs">
+      <DependentUpon>confirm_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirm_page.aspx.designer.cs">
+      <DependentUpon>confirm_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="courserequest.aspx.cs">
+      <DependentUpon>courserequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="courserequest.aspx.designer.cs">
+      <DependentUpon>courserequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="courseRequestAdvisor.aspx.cs">
+      <DependentUpon>courseRequestAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="courseRequestAdvisor.aspx.designer.cs">
+      <DependentUpon>courseRequestAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course_Slots_Instructor.aspx.cs">
+      <DependentUpon>Course_Slots_Instructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course_Slots_Instructor.aspx.designer.cs">
+      <DependentUpon>Course_Slots_Instructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="credithourrequest.aspx.cs">
+      <DependentUpon>credithourrequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="credithourrequest.aspx.designer.cs">
+      <DependentUpon>credithourrequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_i_slots.aspx.cs">
+      <DependentUpon>c_i_slots.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_i_slots.aspx.designer.cs">
+      <DependentUpon>c_i_slots.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deleteCourseAdvisor.aspx.cs">
+      <DependentUpon>deleteCourseAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deleteCourseAdvisor.aspx.designer.cs">
+      <DependentUpon>deleteCourseAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete_course.aspx.cs">
+      <DependentUpon>delete_course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete_course.aspx.designer.cs">
+      <DependentUpon>delete_course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete_slot.aspx.cs">
+      <DependentUpon>delete_slot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete_slot.aspx.designer.cs">
+      <DependentUpon>delete_slot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exam_details.aspx.cs">
+      <DependentUpon>exam_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exam_details.aspx.designer.cs">
+      <DependentUpon>exam_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="insertCourseGPAdvisor.aspx.cs">
+      <DependentUpon>insertCourseGPAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="insertCourseGPAdvisor.aspx.designer.cs">
+      <DependentUpon>insertCourseGPAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="insertGPAdvisor.aspx.cs">
+      <DependentUpon>insertGPAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="insertGPAdvisor.aspx.designer.cs">
+      <DependentUpon>insertGPAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="instructor_courses_page.aspx.cs">
+      <DependentUpon>instructor_courses_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instructor_courses_page.aspx.designer.cs">
+      <DependentUpon>instructor_courses_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="issue_installments.aspx.cs">
+      <DependentUpon>issue_installments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="issue_installments.aspx.designer.cs">
+      <DependentUpon>issue_installments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="link_ins_course_slot.aspx.cs">
+      <DependentUpon>link_ins_course_slot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="link_ins_course_slot.aspx.designer.cs">
+      <DependentUpon>link_ins_course_slot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="link_stu_adv.aspx.cs">
+      <DependentUpon>link_stu_adv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="link_stu_adv.aspx.designer.cs">
+      <DependentUpon>link_stu_adv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="link_stu_course_ins.aspx.cs">
+      <DependentUpon>link_stu_course_ins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="link_stu_course_ins.aspx.designer.cs">
+      <DependentUpon>link_stu_course_ins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginAdvisor.aspx.cs">
+      <DependentUpon>loginAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginAdvisor.aspx.designer.cs">
+      <DependentUpon>loginAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="makeup1.aspx.cs">
+      <DependentUpon>makeup1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="makeup1.aspx.designer.cs">
+      <DependentUpon>makeup1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="makeup2.aspx.cs">
+      <DependentUpon>makeup2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="makeup2.aspx.designer.cs">
+      <DependentUpon>makeup2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="missingcourses.aspx.cs">
+      <DependentUpon>missingcourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="missingcourses.aspx.designer.cs">
+      <DependentUpon>missingcourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="optionalcourses.aspx.cs">
+      <DependentUpon>optionalcourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="optionalcourses.aspx.designer.cs">
+      <DependentUpon>optionalcourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="options.aspx.cs">
+      <DependentUpon>options.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="options.aspx.designer.cs">
+      <DependentUpon>options.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pendingRequestsAdvisor.aspx.cs">
+      <DependentUpon>pendingRequestsAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pendingRequestsAdvisor.aspx.designer.cs">
+      <DependentUpon>pendingRequestsAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phonenumbers.aspx.cs">
+      <DependentUpon>phonenumbers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phonenumbers.aspx.designer.cs">
+      <DependentUpon>phonenumbers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerAdvisor.aspx.cs">
+      <DependentUpon>registerAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registerAdvisor.aspx.designer.cs">
+      <DependentUpon>registerAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="requestCHAdvisor.aspx.cs">
+      <DependentUpon>requestCHAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="requestCHAdvisor.aspx.designer.cs">
+      <DependentUpon>requestCHAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="requests.aspx.cs">
+      <DependentUpon>requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="requests.aspx.designer.cs">
+      <DependentUpon>requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="requiredcourses.aspx.cs">
+      <DependentUpon>requiredcourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="requiredcourses.aspx.designer.cs">
+      <DependentUpon>requiredcourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="semesters_offered_courses.aspx.cs">
+      <DependentUpon>semesters_offered_courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="semesters_offered_courses.aspx.designer.cs">
+      <DependentUpon>semesters_offered_courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="semester_courses_page.aspx.cs">
+      <DependentUpon>semester_courses_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="semester_courses_page.aspx.designer.cs">
+      <DependentUpon>semester_courses_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student2.aspx.cs">
+      <DependentUpon>student2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student2.aspx.designer.cs">
+      <DependentUpon>student2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentregister.aspx.cs">
+      <DependentUpon>studentregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentregister.aspx.designer.cs">
+      <DependentUpon>studentregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="students_page.aspx.cs">
+      <DependentUpon>students_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="students_page.aspx.designer.cs">
+      <DependentUpon>students_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transcript.aspx.cs">
+      <DependentUpon>transcript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transcript.aspx.designer.cs">
+      <DependentUpon>transcript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateGPAdvisor.aspx.cs">
+      <DependentUpon>updateGPAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateGPAdvisor.aspx.designer.cs">
+      <DependentUpon>updateGPAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="update_status.aspx.cs">
+      <DependentUpon>update_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update_status.aspx.designer.cs">
+      <DependentUpon>update_status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewASAdvisor.aspx.cs">
+      <DependentUpon>viewASAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewASAdvisor.aspx.designer.cs">
+      <DependentUpon>viewASAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewRequestsAdvisor.aspx.cs">
+      <DependentUpon>viewRequestsAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewRequestsAdvisor.aspx.designer.cs">
+      <DependentUpon>viewRequestsAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewStudentsAdvisor.aspx.cs">
+      <DependentUpon>viewStudentsAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewStudentsAdvisor.aspx.designer.cs">
+      <DependentUpon>viewStudentsAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_all_prereq.aspx.cs">
+      <DependentUpon>view_all_prereq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_all_prereq.aspx.designer.cs">
+      <DependentUpon>view_all_prereq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_gradplans.aspx.cs">
+      <DependentUpon>view_gradplans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_gradplans.aspx.designer.cs">
+      <DependentUpon>view_gradplans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_g_p.aspx.cs">
+      <DependentUpon>view_g_p.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_g_p.aspx.designer.cs">
+      <DependentUpon>view_g_p.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_inst.aspx.cs">
+      <DependentUpon>view_inst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_inst.aspx.designer.cs">
+      <DependentUpon>view_inst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_payments.aspx.cs">
+      <DependentUpon>view_payments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_payments.aspx.designer.cs">
+      <DependentUpon>view_payments.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55281</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55281/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
