@@ -1,5 +1,5 @@
 
-Project Overview
+Project Overview:
 The GUC has an advising system responsible for advising students. In Our system, Student is considered
 advising if one or more of these conditions are met:
 1. Declared his/her major after the deadline
