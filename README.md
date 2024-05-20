@@ -75,47 +75,48 @@ I) **Fetch all graduation plans along with their initiated advisors.**
 
 ### All Other Functionalities using Procedures, Views and Functions (Scalar, TV)
 
-A) **Student Registration**  
-B) **Advisor Registration**  
-C) **List all advising students**  
-D) **List all Advisors**  
-E) **List all Students with their Advisors**  
-F) **Add new Semester**  
-G) **Add new course**  
-H) **Link instructor to course on specific slot**  
-I) **Link student to course with Specific instructor**  
-J) **Link student to advisor**  
-K) **Admin add exam**  
-L) **Issue installments as per the number of installments for a certain payment**  
-M) **Delete courses along with its related slots**  
-N) **Update student’s Status based on his/her financial status**  
-O) **Choose instructor for a certain selected course**  
-P) **Delete slots of certain courses if the course isn’t offered in the current semester**  
-Q) **Advisor login using username and password**  
-R) **Insert graduation Plan**  
-S) **Add course inside certain plan of specific student**  
-T) **Update expected graduation date in a certain graduation plan**  
-U) **Delete course from certain graduation plan in certain semester**  
-V) **Retrieve requests for certain advisor**  
-W) **Approve/Reject extra credit hours’ request**  
-X) **View all students assigned to specific advisor from a certain major along with their taken courses**  
-Y) **Approve/Reject courses request**  
-Z) **View pending requests of specific advisor students**  
-AA) **Student Login using username and password**  
-BB) **Add Student mobile number(s)**  
-CC) **View available courses in the current semester**  
-DD) **Sending course’s request**  
-EE) **Sending extra credit hours’ request**  
-FF) **View graduation plan along with the assigned courses**  
-GG) **Student view his first not paid installment deadline**  
-HH) **View slots of certain course that is taught by a certain instructor**  
-II) **Register for first makeup exam**  
-JJ) **Second makeup Eligibility Check**  
-KK) **Register for 2nd makeup exam**  
-LL) **View required courses**  
-MM) **View optional courses**  
-NN) **View missing/remaining courses to specific student**  
-OO) **Choose instructor for a certain selected course**  
+- **Student Registration**  
+- **Advisor Registration**  
+- **List all advising students**  
+- **List all Advisors**  
+- **List all Students with their Advisors**  
+- **Add new Semester**  
+- **Add new course**  
+- **Link instructor to course on specific slot**  
+- **Link student to course with Specific instructor**  
+- **Link student to advisor**  
+- **Admin add exam**  
+- **Issue installments as per the number of installments for a certain payment**  
+- **Delete courses along with its related slots**  
+- **Update student’s Status based on his/her financial status**  
+- **Choose instructor for a certain selected course**  
+- **Delete slots of certain courses if the course isn’t offered in the current semester**  
+- **Advisor login using username and password**  
+- **Insert graduation Plan**  
+- **Add course inside certain plan of specific student**  
+- **Update expected graduation date in a certain graduation plan**  
+- **Delete course from certain graduation plan in certain semester**  
+- **Retrieve requests for certain advisor**  
+- **Approve/Reject extra credit hours’ request**  
+- **View all students assigned to specific advisor from a certain major along with their taken courses**  
+- **Approve/Reject courses request**  
+- **View pending requests of specific advisor students**  
+- **Student Login using username and password**  
+- **Add Student mobile number(s)**  
+- **View available courses in the current semester**  
+- **Sending course’s request**  
+- **Sending extra credit hours’ request**  
+- **View graduation plan along with the assigned courses**  
+- **Student view his first not paid installment deadline**  
+- **View slots of certain course that is taught by a certain instructor**  
+- **Register for first makeup exam**  
+- **Second makeup Eligibility Check**  
+- **Register for 2nd makeup exam**  
+- **View required courses**  
+- **View optional courses**  
+- **View missing/remaining courses to specific student**  
+- **Choose instructor for a certain selected course**  
+
 
 ## Contribution
 
