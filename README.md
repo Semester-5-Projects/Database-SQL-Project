@@ -33,7 +33,7 @@ The aim of the project is to implement a modified advising system to serve the d
 - PreqCourse_course
 - Instructor
 - Instructor_Course
-- Student_Instructor_Course_take
+- Student_Instructor_Course_Take
 - Semester
 - Course_Semester
 - GradPlan_Course
