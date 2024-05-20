@@ -116,3 +116,12 @@ LL) **View required courses**
 MM) **View optional courses**  
 NN) **View missing/remaining courses to specific student**  
 OO) **Choose instructor for a certain selected course**  
+
+## Contribution
+
+Contributions are welcome! If you have any suggestions, improvements, or new features you'd like to see, feel free to fork this repository, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
